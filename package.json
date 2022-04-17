@@ -1,0 +1,21 @@
+{
+  "name": "@incity/root",
+  "private": true,
+  "description": "A monorepo for INCITY",
+  "author": "samurazzz <samura.work@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "incity",
+    "nestjs",
+    "react",
+    "monorepo"
+  ],
+  "packageManager": "yarn@3.2.0",
+  "workspaces": [
+    "apps/*",
+    "common/*"
+  ],
+  "scripts": {
+    "start": "yarn workspaces foreach run start"
+  }
+}
